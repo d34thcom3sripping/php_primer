@@ -1,22 +1,10 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>PHP Primer - Index</title>
-</head>
-<body>
-    <h2>Follow each link to the page example</h2>
-    <ul>
-        <li><a href="array.php">Simple Array and Printouts</a></li>
-        <li><a href="forloop.php">Simple For Loop</a></li>
-        <li><a href="whileldowhileoop.php">Simple While & Dowhile Loop</a></li>
-        <li><a href="ifstatement.php">Simple If Statement</a></li>
-        <li><a href="switchstatement.php">Simple Switch Statement</a></li>
-    </ul>
+    <?php 
+        $title = "Home";
+        include 'includes/header.php' 
+    ?>
+
     <!-- HTML -->
-    <h1> Stan Lee's Word of the Day </h1>
+    <h1 style="text-align: center;"><?php echo $title ?></h1>
     <br/>
 
     <?php 
@@ -27,6 +15,9 @@
         echo '<br/>';
     ?>
         <!-- huh -->
+    <button type="button" class="btn btn-dark">I'm a button, click me</button>
+    <br/>
+    
     <?php
         //PHP
         //variables 
@@ -52,6 +43,4 @@
 
     ?>
 
-
-</body>
-</html>
+    <?php require 'includes/footer.php' ?>
